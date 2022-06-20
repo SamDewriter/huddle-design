@@ -7,12 +7,16 @@
 }
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
     width: 100%;
     height: 100%;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+.down-2 {
+  margin-top: 2%;
 }
 .down-3 {
   margin-top: 3%;
@@ -23,7 +27,12 @@ body {
 .down-10 {
   margin-top: 10%;
 }
-
+.down-20 {
+  margin-top: 20%;
+}
+.down-50 {
+  margin-top: 80%;
+}
 .bg-landing {
     width: 100%;
     height: 550px;
@@ -141,12 +150,18 @@ body {
     float: left;
     margin-left: 100px;
 }
+.white {
+  color: #fff;
+}
 /* .open-sans {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
 } */
 .px15 {
   font-size: 15px;
+}
+.px25 {
+  font-size: 25px;
 }
 .px30 {
   font-size: 30px;
@@ -172,19 +187,43 @@ body {
 .mobile {
   display: none;
 }
-.word-container {
+.container {
   width: 94%;
   float: left;
   margin-left: 3%;
+  position: relative;
 }
-
 footer {
   width: 100%;
   height: 500px;
   color: #fff;
   background: var(--very-dark-cyan);
   margin-top: -100px;
+}
+.col-4 {
+  width: 33.3%;
+  float: left;
+  position: relative;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.icon-container {
+    /* grid styles */
+      display: flex;
+      padding: 10px;
+      /* grid-template-columns: 50% 50%;
+      grid-gap: -100px; */
+}
+.icon-container > div span {
+  flex: 1 1 auto;
 
+  margin: 20px;  /* and that, will result in a 10px gap */
+}
+.filter-green {
+  filter: brightness(0) invert(1);
 }
 @media only screen and (max-width: 600px) {
   footer {
@@ -256,11 +295,6 @@ footer {
   .flex-container {
     /* width: 900px; */
     height: 600px;
-  }
-  .word-container {
-    width: 94%;
-    float: left;
-    margin-left: 3%;
   }
   .img-container img {
     width: 50%;
