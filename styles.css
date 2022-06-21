@@ -31,7 +31,7 @@ body {
   margin-top: 20%;
 }
 .down-50 {
-  margin-top: 80%;
+  margin-top: 60%;
 }
 .bg-landing {
     width: 100%;
@@ -62,9 +62,9 @@ body {
   /* margin-top: -70px; */
   /* height: auto; */
 }
-#build {
+#icon-left {
   float: left;
-  margin-left: 60px;
+  margin-left: 20px;
   /* margin-top: -130px; */
 }
 #left {
